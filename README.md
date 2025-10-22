@@ -1,7 +1,7 @@
 # 📝 Medium Blog Backend
 
-A lightweight, modern **Medium-like blogging platform backend** built using **TypeScript**, **Hono**, **Cloudflare Workers**, and **PostgreSQL** with **Prisma Accelerate**.  
-The project includes **JWT-based authentication**, **Zod-powered validation**, and a **shared npm package** for schema validation used by both frontend and backend.
+A clean and modern **Medium-style blogging backend** built with **TypeScript**, **Hono**, **Cloudflare Workers**, and **PostgreSQL** using **Prisma Accelerate** for efficient connection pooling.  
+It includes **JWT authentication**, **Zod validation**, and a **shared npm package** for schema validation across both frontend and backend.
 
 ---
 
@@ -10,13 +10,28 @@ The project includes **JWT-based authentication**, **Zod-powered validation**, a
 | Layer | Technology |
 |-------|-------------|
 | Language | **TypeScript** |
-| Framework | **Hono** (fast, minimal web framework for Cloudflare Workers) |
-| Database | **PostgreSQL** (via Neon or Cloudflare D1) |
+| Framework | **Hono** — blazing-fast, minimal web framework for Cloudflare Workers |
+| Database | **PostgreSQL** (hosted on **Neon**) |
 | ORM | **Prisma** with **Accelerate connection pooling** |
 | Deployment | **Cloudflare Workers** |
-| Validation | **Zod** (via a shared npm package `@mon9ters/medium-common`) |
-| Auth | **JWT (JSON Web Token)** |
+| Validation | **Zod** (via shared npm package `@mon9ters/medium-common`) |
+| Authentication | **JWT (JSON Web Token)** |
 
 ---
+
+## 📦 Features
+
+- 🔐 **User Authentication** — Signup and Signin using JWT  
+- 🧠 **Zod Validation** — Schema-based validation for both backend and frontend  
+- ⚡ **Prisma Accelerate** — Optimized database connection pooling  
+- 🌐 **Cloudflare Workers** — Serverless, fast, and globally distributed  
+- 🧩 **Shared NPM Package** — Common validation logic shared across projects  
+
+---
+
+
+---
+
+Would you like me to include your **frontend project section** below this (React + Vite + Tailwind + TypeScript)? It’ll make your README complete for LinkedIn or GitHub.
 
 
