@@ -11,7 +11,7 @@ const userRouter = new Hono<{
   };
 }>();
 
-userRouter.post("signup", async (c) => {
+userRouter.post("/signup", async (c) => {
   try {
     const prisma = new PrismaClient({
       datasourceUrl: c.env?.PRISMA_ACCELERATE_URL,
@@ -33,7 +33,10 @@ userRouter.post("signup", async (c) => {
       },
     });
 
-    const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);
+    const jwt = await sign(
+      { id: user.id, username: user.username },
+      c.env.JWT_SECRET
+    );
 
     return c.json({ jwt });
   } catch (e: any) {
@@ -62,16 +65,18 @@ userRouter.post("/signin", async (c) => {
     const user = await prisma.user.findUnique({
       where: {
         email: body.email,
-        password: body.password,
       },
     });
 
     if (!user) {
       c.status(403);
-      return c.json({ error: "Invalid creditial" });
+      return c.json({ error: "Already user Exist" });
     }
 
-    const jwt = await sign({ id: user.id }, c.env.JWT_SECRET);
+    const jwt = await sign(
+      { id: user.id, username: user.username },
+      c.env.JWT_SECRET
+    );
     return c.json({ jwt });
   } catch (e: any) {
     c.text(e);

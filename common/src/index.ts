@@ -1,4 +1,4 @@
-import z from "zod";
+import { z } from "zod";
 
 export const signupSchema = z.object({
   username: z.string(),
@@ -6,14 +6,14 @@ export const signupSchema = z.object({
   password: z.string().min(8, "Minimum 8 Character should have "),
 });
 
-export type SigninInput = z.infer<typeof signupSchema>;
+export type SignupInput = z.infer<typeof signupSchema>;
 
 export const signinSchema = z.object({
   email: z.string(),
   password: z.string().min(8, "Minimum 8 Character should have "),
 });
 
-export type SignupInput = z.infer<typeof signinSchema>;
+export type SigninInput = z.infer<typeof signinSchema>;
 
 export const createBlog = z.object({
   title: z.string(),
