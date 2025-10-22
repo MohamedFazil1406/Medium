@@ -32,6 +32,6 @@ It includes **JWT authentication**, **Zod validation**, and a **shared npm packa
 
 ---
 
-Would you like me to include your **frontend project section** below this (React + Vite + Tailwind + TypeScript)? It’ll make your README complete for LinkedIn or GitHub.
+
 
 
