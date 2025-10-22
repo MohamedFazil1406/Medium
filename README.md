@@ -1,7 +1,7 @@
-# 📝 Medium Blog Backend
+# 📝 Medium-style Blogging Platform
 
-A clean and modern **Medium-style blogging backend** built with **TypeScript**, **Hono**, **Cloudflare Workers**, and **PostgreSQL** using **Prisma Accelerate** for efficient connection pooling.  
-It includes **JWT authentication**, **Zod validation**, and a **shared npm package** for schema validation across both frontend and backend.
+A **full-stack Medium-like blogging platform** built with **TypeScript**, **React (TSX)**, **Tailwind CSS**, **Hono**, **Cloudflare Workers**, and **PostgreSQL** using **Prisma Accelerate** for efficient database access.  
+The platform supports **user authentication**, **file uploads**, **Zod validation**, and a **shared npm package** for consistent schema validation across frontend and backend.
 
 ---
 
@@ -9,29 +9,27 @@ It includes **JWT authentication**, **Zod validation**, and a **shared npm packa
 
 | Layer | Technology |
 |-------|-------------|
-| Language | **TypeScript** |
-| Framework | **Hono** — blazing-fast, minimal web framework for Cloudflare Workers |
+| Frontend | **React (TSX)**, **Tailwind CSS**, **Axios** |
+| Backend | **TypeScript**, **Hono**, **Cloudflare Workers** |
 | Database | **PostgreSQL** (hosted on **Neon**) |
 | ORM | **Prisma** with **Accelerate connection pooling** |
-| Deployment | **Cloudflare Workers** |
 | Validation | **Zod** (via shared npm package `@mon9ters/medium-common`) |
 | Authentication | **JWT (JSON Web Token)** |
+| Deployment | **Cloudflare Workers** |
 
 ---
 
 ## 📦 Features
 
 - 🔐 **User Authentication** — Signup and Signin using JWT  
-- 🧠 **Zod Validation** — Schema-based validation for both backend and frontend  
+- 🖼 **File Upload System** — Upload and manage images and documents for posts  
+- 🧠 **Zod Validation** — Shared schema validation for both frontend and backend  
 - ⚡ **Prisma Accelerate** — Optimized database connection pooling  
-- 🌐 **Cloudflare Workers** — Serverless, fast, and globally distributed  
+- 🌐 **Cloudflare Workers** — Serverless and globally distributed backend  
+- 📡 **Axios Integration** — Smooth communication between frontend and backend APIs  
 - 🧩 **Shared NPM Package** — Common validation logic shared across projects  
+- 💻 **Responsive UI** — Modern design with Tailwind CSS  
 
 ---
-
-
----
-
-
 
 
